@@ -37,7 +37,7 @@ WHERE `hour` > '14:00:00' AND `date` = '2020-06-20'
 
 SELECT *
 FROM `degrees`
-WHERE `name` LIKE '%Magistrale%'
+WHERE `level` = 'Magistrale'
 
 7. Da quanti dipartimenti è composta l'università? (12)
 
@@ -48,4 +48,4 @@ FROM `departments`
 
 SELECT COUNT(*)
 FROM `teachers`
-WHERE `phone` IS NOT NULL
+WHERE `phone` IS NULL
